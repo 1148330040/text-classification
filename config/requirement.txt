@@ -1,0 +1,16 @@
+keras_xlnet
+keras_bert
+transformers==3.0.2
+tensorflow==2.3.1
+torch
+jieba
+sklearn
+pandas
+numpy
+matplotlib
+seaborn
+sqlalchemy
+pymysql
+flask
+gevent
+keras==2.4.3

@@ -1,0 +1,28 @@
+# 项目介绍
+
+config:
+  config.yml: sql和模型相关配置
+  jieba_thesaurus.txt: 用于对结巴分词库添加的新词, 可将文本内重要的单词添加进入
+  win-requirement.txt: 项目相关支持库-win平台下
+
+DataCleans:
+  data_pre_clean.py: 数据预清洗文件, 主要是将文本中的一些标点, 特殊符号等进行处理
+  data_feature_engineering.py: 数据特征工程文件, 主要是将清洗后的文本对话切割, 连接等处理
+  data_labels_solve.py: 已弃用, 主要是用于将文本单词重要性排名, 之前的目的是进一步删减文本长度
+
+MysqlLink:
+  sql_link.py: 用于和数据库建立连接, 进行数据的提取以及存储
+
+Start:
+  datas_scheduling.py: 项目开关, 数据逻辑调用, 控制数据清洗与特征工程文件
+  model_scheduling.py: 项目开关, 模型逻辑调用, 控制各个模型的训练和存储
+
+TF-idfJiebaWordrank:
+  words_rank.py: 已弃用, 目的是通过jieba和TF-IDF对总数据切割后的单词按重要性排名, 用于删减文本长度
+
+Transformer:
+  Bert_Model: 文件夹, 根据模型的不同里面会生成对应的训练后模型和对应模型训练过程日志, 可删除, 模型训练时会自动生成
+  Albert_model.py: albert模型, 用于文本分类
+  Bert_model.py: Bert模型, 用于文本分类
+  Xlnet_model.py: Xlnet模型, 用于文本分类
+  Robert_model.py: Robert模型, 用于标签位置判定

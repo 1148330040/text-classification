@@ -1,0 +1,41 @@
+db:
+  host: "localhost"
+  user_name: "root"
+  pass_word: "123456"
+  data_base: "mysql"
+
+db_sc:
+  host: "rm-uf679a8c6ebop987w.mysql.rds.aliyuncs.com"
+  user_name: "tangzhilin"
+  pass_word: "!H4MjKp6&GH0HVuEMiq38VH!"
+  data_base: "mysql"
+
+bert_model:
+  epochs: 10
+  batch_size: 32
+  num_works: 0
+  text_len: 130
+  shuffle: True
+  lr: 0.00001
+  max_to_keep: 3
+
+robert_model:
+  text_len: 130
+  batch_size: 2
+  epoch: 12
+  lr: 0.00001
+  verbose: 1
+
+albert_model:
+  text_len: 130
+  batch_size: 2
+  epoch: 12
+  lr: 0.00001
+  verbose: 1
+
+xlnet_model:
+  text_len: 128
+  batch_size: 16
+  epoch: 10
+  lr: 0.000014
+  memory_len: 0
