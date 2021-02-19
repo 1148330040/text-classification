@@ -5,10 +5,7 @@ db:
   data_base: "mysql"
 
 db_sc:
-  host: "rm-uf679a8c6ebop987w.mysql.rds.aliyuncs.com"
-  user_name: "tangzhilin"
-  pass_word: "!H4MjKp6&GH0HVuEMiq38VH!"
-  data_base: "mysql"
+  ...
 
 bert_model:
   epochs: 10
